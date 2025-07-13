@@ -34,7 +34,7 @@ const translations = {
     venue_addr: '서울특별시 서대문구 신촌로 119-1',
     venue_name: '신촌 인피니티클럽',
     venue_detail: '지하 1층, 신촌역 1번 출구에서 도보 5분',
-    directions: '길찾기(Naver)',
+    directions: '공연장 위치 보기(Naver)',
     venue_map_btn: "공연장 위치 보기(Google)",
   },
   en: {
@@ -96,7 +96,7 @@ const translations = {
     venue_addr: 'ソウル特別市西大門区新村路119-1',
     venue_name: '新村インフィニティクラブ',
     venue_detail: '地下1階、新村駅1番出口から徒歩5分',
-    directions: '経路案内(Naver)',
+    directions: '会場を見る(Naver)',
     venue_map_btn: "会場を見る(Google)",
   }
 };
@@ -134,27 +134,3 @@ function setLanguage(lang) {
     });
   });
 })();
-
-// 지도: iframe만 사용, JS API는 아래 주석 참고
-/*
-// Naver Maps JS API 예시 (Client ID 필요)
-function initNaverMap() {
-  const venueLocation = new naver.maps.LatLng(37.555749, 126.938710);
-  const map = new naver.maps.Map('map', {
-    center: venueLocation,
-    zoom: 16
-  });
-  const marker = new naver.maps.Marker({
-    position: venueLocation,
-    map: map,
-    title: '신촌 인피니티클럽'
-  });
-}
-function loadNaverMapAPI() {
-  const script = document.createElement('script');
-  script.src = 'https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID&submodules=geocoder';
-  script.onload = function() { initNaverMap(); };
-  document.head.appendChild(script);
-}
-// 사용하려면 <div id="map"></div> 추가 후 loadNaverMapAPI() 호출
-*/
