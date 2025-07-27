@@ -157,6 +157,17 @@ header {
     font-size: 0.9rem;
   }
   
+  /* 아티스트 링크 */
+  .artist-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  .artist-link:hover {
+    text-decoration: none;
+  }
+  
   /* 입장료 정보 */
   .ticket-info {
     background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
@@ -223,6 +234,21 @@ header {
   
   .poster:hover {
     transform: scale(1.02);
+  }
+  
+  /* 타임테이블 이미지 */
+  .timetable-image {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .timetable-image:hover {
+    transform: scale(1.01);
   }
   
   /* 버튼 */
